@@ -17,8 +17,8 @@ public class Program {
 		int n = sc.nextInt();
 		System.out.println();
 		
-		for (int i = 1 ; i<=n ; i++) {
-			System.out.println("Rent #" + i);
+		for (int i = 0 ; i<n ; i++) {
+			System.out.println("Rent #" + (i + 1));
 			System.out.print("Name: ");
 			String name = sc.next();
 			System.out.print("Email: ");
@@ -31,7 +31,7 @@ public class Program {
 		System.out.println();
 		System.out.println("Busy rooms:");
 		
-		for (int i=0;i<=10;i++) {
+		for (int i=0;i<10;i++) {
 			if (rent[i] != null) {
 				System.out.println(rent[i]);
 			}
